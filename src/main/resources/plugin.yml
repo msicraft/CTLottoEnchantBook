@@ -1,0 +1,10 @@
+name: CTLottoEnchantBook
+version: '${project.version}'
+main: me.msicraft.ctlottoenchantbook.CTLottoEnchantBook
+api-version: '1.20'
+commands:
+  인챈트뽑기:
+    description: Main command
+  lottoenchantbook:
+    description: Sub command
+    aliases: [lteb, lottoenchant]
