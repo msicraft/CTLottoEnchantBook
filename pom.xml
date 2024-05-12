@@ -83,7 +83,7 @@
       <dependency>
           <groupId>com.github.msicraft</groupId>
           <artifactId>CTCore</artifactId>
-          <version>master-310114f73c-1</version>
+          <version>master-66f5d954ce-1</version>
           <scope>provided</scope>
       </dependency>
   </dependencies>

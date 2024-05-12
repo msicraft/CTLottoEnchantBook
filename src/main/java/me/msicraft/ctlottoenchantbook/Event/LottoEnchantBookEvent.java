@@ -2,7 +2,7 @@ package me.msicraft.ctlottoenchantbook.Event;
 
 import me.msicraft.ctcore.Utils.EntityUtil;
 import me.msicraft.ctlottoenchantbook.CTLottoEnchantBook;
-import me.msicraft.ctlottoenchantbook.EnchantBookData;
+import me.msicraft.ctlottoenchantbook.aCommon.EnchantBookData;
 import net.kyori.adventure.text.Component;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;

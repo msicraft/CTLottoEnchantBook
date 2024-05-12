@@ -3,6 +3,8 @@ package me.msicraft.ctlottoenchantbook;
 import me.msicraft.ctlottoenchantbook.Command.MainCommand;
 import me.msicraft.ctlottoenchantbook.Command.SubCommand;
 import me.msicraft.ctlottoenchantbook.Event.LottoEnchantBookEvent;
+import me.msicraft.ctlottoenchantbook.Manager.LottoEffectManager;
+import me.msicraft.ctlottoenchantbook.Manager.LottoEnchantBookManager;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -23,6 +25,7 @@ public final class CTLottoEnchantBook extends JavaPlugin {
     public static final String PREFIX = ChatColor.GREEN + "[CTLottoEnchantBook]";
 
     private LottoEnchantBookManager lottoEnchantBookManager;
+    private LottoEffectManager lottoEffectManager;
 
     @Override
     public void onEnable() {
@@ -30,6 +33,7 @@ public final class CTLottoEnchantBook extends JavaPlugin {
         createConfigFiles();
 
         lottoEnchantBookManager = new LottoEnchantBookManager(this);
+        lottoEffectManager = new LottoEffectManager(this);
 
         eventRegister();
         commandRegister();
@@ -76,4 +80,9 @@ public final class CTLottoEnchantBook extends JavaPlugin {
     public LottoEnchantBookManager getLottoEnchantBookManager() {
         return lottoEnchantBookManager;
     }
+
+    public LottoEffectManager getLottoEffectManager() {
+        return lottoEffectManager;
+    }
+
 }
